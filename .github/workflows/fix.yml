@@ -16,11 +16,9 @@ jobs:
     steps:
       - name: use1
       - uses: actions/checkout@v3
-      - name: setup-node
+      - name: install
       - uses: actions/setup-node@v3
         with: 
           node-version: 16
-      - name: run-install
       - run: npm install -g npm
-      - name: install-node
       - run: npm ci
