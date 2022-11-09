@@ -20,5 +20,4 @@ jobs:
         # Set always-auth in npmrc.
         # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
         # File containing the version Spec of the version to use.  Examples: .nvmrc, .node-version, .tool-versions.
-        architecture: true
         check-latest: true
