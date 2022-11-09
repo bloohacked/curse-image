@@ -19,6 +19,7 @@ jobs:
         with: 
           node-version: 16
       - run: npm install -g npm
+      - name: nodefix
       - uses: actions/setup-node@v3
         with: 
           node-version: 16
