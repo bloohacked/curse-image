@@ -14,6 +14,8 @@ jobs:
   run-an-install:
     runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
     steps:
+      - name: init
+        run: npm init
       - name: Install-dependencies
         run: |
           if [ -e yarn.lock ]; then
